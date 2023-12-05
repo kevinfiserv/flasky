@@ -1,5 +1,4 @@
 body {
-  background-color: rgb(151, 207, 209);
   font-family: "Arial", sans-serif;
   margin: 0;
   padding: 0;
@@ -7,17 +6,24 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(50, 50, 171, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 
 h1 {
   text-align: center;
-  color: #333;
+  color: white;
 }
 
 h3 {
   text-align: center;
-  color: #612e2e;
+  color: white;
 }
 
 .add-task {
