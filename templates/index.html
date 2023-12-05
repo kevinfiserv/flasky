@@ -1,26 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="static/styles.css">
-</head>
-<body onload="getAllTasks()">
+    <link rel="stylesheet" href="static/styles.css" />
+  </head>
+  <body onload="getAllTasks()">
     <h1>To Do List</h1>
-    <h3>
-        Add your tasks for the week and keep track of them here.
-    </h3>
+    <h3>Add your tasks for the week and keep track of them here.</h3>
     <div class="add-task">
-        <input type="text" id="taskInput" placeholder="Enter task here...">
-        <button onclick="addTask()">
-            Add
-        </button>
+      <div class="form-container">
+        <p class="title">Create New Tasks</p>
+        <form class="form">
+          <div class="input-group">
+            <label for="username">Enter task here...</label>
+            <input type="text" id="taskInput" placeholder="Do Laundry" />
+          </div>
+          <br />
+          <button class="cssbuttons-io-button" onclick="addTask()">
+            Add Task
+            <div class="icon">
+              <svg
+                height="24"
+                width="24"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+          </button>
+        </form>
+      </div>
     </div>
-    <ul id="taskList">
-        <!-- Tasks will be dynamically added here -->
-    </ul>
 
+    <div class="task-container">
+      <!-- <h2 style="text-align: center">My Tasks</h2> -->
+      <ul id="taskList">
+        <!-- Tasks will be dynamically added here -->
+      </ul>
+    </div>
     <script src="static/app.js"></script>
-</body>
+  </body>
 </html>
